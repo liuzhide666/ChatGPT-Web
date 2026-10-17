@@ -17,4 +17,20 @@ In each report, v1 JAR signing records such as top-level `META-INF/CERT.SF`, `CE
 
 `workflow success` means comparison was performed and saved; it does **not** mean cross-runner hashes matched or that any release can be signed. Even two separate runners may retrieve Gradle dependencies from the shared Actions cache. Cold-cache provenance, historical release signing, installed devices and HarmonyOS 7 are independent NOT_RUN gates.
 
-The actual SHA-256 and outcomes will be recorded from live workflow logs after the run. No formal APK version change or extra permissions are introduced.
+## Actual GitHub experiment result — 2026-10-17
+
+Run [#39031442577](https://github.com/liuzhide666/ChatGPT-Web/actions/runs/39031442577), source commit `b2cc0168d36a89fb21d55fc9bc398d285bac4130`:
+
+- The two separate build jobs and the comparison job all **PASS**. Both APKs are **528,297,891 bytes**.
+- Runner A APK SHA-256: `fcf0895c50a819b5b0ef70bdec102b3af13bedf1ee843abce88f03dfb5b43405`.
+- Runner B APK SHA-256: `81b1731a606404a12d07c1327f53663110c5b800a88ef7cfc17376e88ce3cde8`.
+- Runner A debug certificate SHA-256: `83c60c92564104a8aad0929a3a137deb855b41bd88eb84734e464ca0a53d3954`.
+- Runner B debug certificate SHA-256: `2e7e1d526ddeebc2fb1265a2fc62e53323f553c632a279ecf03a3cfeefa6718b`.
+- **Non-signature payload SHA-256 fingerprint on both runners:** `a6669800cb6188c65552e6535a6de033ba54f1d775a90de3866a991d779345f0`. Changed non-signature ZIP entries: **0**; missing/additional entries: **0**.
+- Automated classification: **`SIGNER_CHANGED_PAYLOAD_IDENTICAL`**.
+
+Interpretation: host-generated debug certificate identity differs across isolated runners while the inspected non-signature ZIP entry payloads are byte-for-byte identical. This strongly explains the historically different debug APK hashes; **it does not independently prove that signer bytes are the only changed container bytes**, nor certify release-signing continuity, cold-cache reproducibility, installed-device behavior or HarmonyOS 7 support.
+
+Artifact: [comparison JSON #12100313679](https://github.com/liuzhide666/ChatGPT-Web/actions/runs/39031442577/artifacts/12100313679). Debug APKs/keystores were never uploaded.
+
+No formal APK version change or extra permissions were introduced.
