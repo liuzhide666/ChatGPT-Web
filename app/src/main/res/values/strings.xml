@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ChatGPT Web</string>
+    <string name="probe_display_name">ChatGPT Web</string>
+
+    <string name="recovery_title">网页内核连续异常</string>
+    <string name="recovery_retry">重新加载</string>
+
+    <string name="startup_recovery_title">网页内核启动失败</string>
+    <string name="startup_recovery_previous_message">检测到上次网页内核启动未正常完成。本次不会自动重复启动，以避免连续闪退。你可以手动开始网页内核。</string>
+    <string name="startup_recovery_current_message">本次启动已经在当前进程中失败。为了避免同一进程重复初始化 GeckoRuntime，请先关闭应用，再从桌面重新打开。</string>
+    <string name="startup_stage_format">失败阶段：%1$s</string>
+    <string name="startup_failure_type_format">错误类型：%1$s</string>
+    <string name="startup_failure_message_format">错误信息：%1$s</string>
+    <string name="startup_failure_cause_format">根本原因：%1$s</string>
+    <string name="startup_failure_no_java_detail">未记录到 Java 异常详情，可能属于进程级中断。</string>
+    <string name="startup_failure_empty_message">未提供错误信息</string>
+    <string name="startup_retry_fresh">开始网页内核</string>
+    <string name="startup_close_failed_process">关闭应用</string>
+
+    <string name="startup_stage_ui_ready">准备应用界面</string>
+    <string name="startup_stage_gecko_runtime">初始化网页内核</string>
+    <string name="startup_stage_gecko_view">创建网页视图</string>
+    <string name="startup_stage_gecko_session">建立网页会话</string>
+    <string name="startup_stage_unknown">未知阶段</string>
+</resources>

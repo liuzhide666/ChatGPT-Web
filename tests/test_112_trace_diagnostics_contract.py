@@ -1,0 +1,4 @@
+from _vc113_keyboard_neutrality import assert_removed_input_architecture
+
+def test_input_trace_diagnostics_is_removed_pending_browser_diagnostics_part2():
+    assert_removed_input_architecture()

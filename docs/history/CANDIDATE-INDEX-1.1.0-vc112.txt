@@ -1,0 +1,35 @@
+ChatGPT Web — 1.1.0 / vc112 RC2 Candidate Index
+Date consolidated: 2026-08-27
+Status: RC2_PACKAGE_AUDITED_NOT_CANONICAL
+
+1. Identity
+Package: com.liuchenlin.chatgptweb
+Application label: ChatGPT Web
+Version name: 1.1.0
+Version code: 112
+Built-in extension: 1.1.1
+Bridge protocol: 2
+minSdk / targetSdk / compileSdk: 26 / 28 / 37
+Java: 17
+GeckoView: 153.0.20260810162159
+Canonical signer certificate SHA-256: 23130c6a6b7b0969d4c76ac9e7278f9b4c26c77a897d0c4a0de514a9c3a4e70c
+
+2. Candidate APK
+File: ChatGPT-Web-1.1.0-RC2-vc112.apk
+SHA-256: 469343cd23129073c2f2735d6c218fb417a0c7c3da758fdb3e168aa04c7324ad
+Size: 527721224 bytes
+v2/v3 signature: verified
+16 KiB zip alignment: verified
+android:debuggable=false
+
+3. Source/package gate
+183 Python + 36 Java Host + Node input + Node effect verification + API37 compile + NewApi lint + real Gecko153 ABI: PASS.
+Application DEX: 163 classes, foreign=0, SHA-256 6f324503067bb07dd231c9ea4f084cb86ae2983b0a69ab8b34f34b36775c7138.
+Relative to vc111, exactly five non-signature entries change: AndroidManifest.xml, classes3.dex, bridge manifest.json, site_adapter.js and content.js. No non-signature entry is added or removed.
+39 native .so remain ZIP STORED and byte-identical; resources.arsc and other four DEX remain byte-identical.
+
+4. Runtime boundary
+Fresh ADB preflight: 0 online target devices.
+Target-device Gate F: NOT RUN.
+Do not rename/promote this APK and do not switch CURRENT-PROJECT-INDEX until the exact APK bytes pass Gate F on 卓易通.
+Current canonical remains 1.0.3 Formal. vc111 remains preserved as known target-device Shift+Enter failure evidence.

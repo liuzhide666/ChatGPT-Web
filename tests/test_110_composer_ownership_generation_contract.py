@@ -1,0 +1,4 @@
+from _vc113_keyboard_neutrality import assert_native_transparent
+
+def test_input_ownership_generation_is_removed_with_semantic_keyboard_layer():
+    assert_native_transparent()

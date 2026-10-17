@@ -1,0 +1,41 @@
+# IDE and build intermediates
+.gradle/
+.idea/
+.vscode/
+**/build/
+**/out/
+.host-test-*/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+local.properties
+*.log
+.DS_Store
+# Credentials / signing / account data
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+*.asc
+.env
+.env.*
+!*.env.example
+private/
+secrets/
+signing/
+# Distributables kept in private release vault
+*.apk
+*.aab
+*.hap
+*.app
+*.7z
+*.7z.*
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# The one intentionally published flat source delivery is explicitly allowed.
+!ChatGPT-Web-ALL-FILES-FLAT-2026-10-17.zip

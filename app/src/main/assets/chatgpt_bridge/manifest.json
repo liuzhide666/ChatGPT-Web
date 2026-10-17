@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "ChatGPT Web Site Bridge",
+  "version": "1.1.2",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "chatgpt-health@liuchenlin.local"
+    }
+  },
+  "permissions": [
+    "geckoViewAddons",
+    "nativeMessaging",
+    "nativeMessagingFromContent"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*"
+      ],
+      "js": [
+        "site_adapter.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

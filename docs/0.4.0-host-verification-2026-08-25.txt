@@ -1,0 +1,22 @@
+......................                                                   [100%]
+22 passed in 1.03s
+AndroidPermissionCoordinatorTest OK
+BackgroundReloadPolicyTest OK
+CrashRecoveryPolicyTest OK
+ExternalFlowTrackerTest OK
+FilePromptCoordinatorTest OK
+GeckoMediaPermissionDelegateTest OK
+GeckoNavigationDelegateTest OK
+GeckoRuntimeHolderTest OK
+GeckoSessionControllerTest OK
+MediaDiagnosticsTest OK
+MediaSelectionPolicyTest OK
+NavigationPolicyTest OK
+SessionStateStoreTest OK
+TrustedOriginPolicyTest OK
+HOST_TESTS_OK count=14
+ANDROID_CONTRACT_COMPILE_OK
+FORBIDDEN_SYMBOL_SCAN_OK
+SECRET_PATTERN_SCAN_OK
+ADB_ONLINE_DEVICE_COUNT=0
+HOST_VERIFICATION_OK

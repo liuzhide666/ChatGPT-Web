@@ -1,0 +1,4 @@
+from _vc113_keyboard_neutrality import assert_removed_input_architecture
+
+def test_input_routing_trace_is_removed_with_keyboard_semantic_ownership():
+    assert_removed_input_architecture()

@@ -1,0 +1,45 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.liuchenlin.chatgptweb'
+    compileSdk 37
+
+    defaultConfig {
+        applicationId 'com.liuchenlin.chatgptweb'
+        minSdk 26
+        targetSdk 28
+        versionCode 113
+        versionName "1.1.0"
+    }
+
+    flavorDimensions 'distribution'
+    productFlavors {
+        formal {
+            dimension 'distribution'
+            manifestPlaceholders = [appLabel: 'ChatGPT Web']
+        }
+        probe {
+            dimension 'distribution'
+            applicationIdSuffix '.geckoprobe'
+            manifestPlaceholders = [appLabel: 'ChatGPT Web']
+        }
+    }
+
+    sourceSets {
+        formal.manifest.srcFile 'src/distribution/AndroidManifest.xml'
+        probe.manifest.srcFile 'src/distribution/AndroidManifest.xml'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildToolsVersion '36.0.0'
+}
+
+dependencies {
+    implementation 'org.mozilla.geckoview:geckoview:153.0.20260810162159'
+}
