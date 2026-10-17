@@ -1,0 +1,4 @@
+from _vc113_keyboard_neutrality import assert_removed_input_architecture
+
+def test_cross_layer_key_deduplicator_is_removed_because_shell_does_not_own_keys():
+    assert_removed_input_architecture()

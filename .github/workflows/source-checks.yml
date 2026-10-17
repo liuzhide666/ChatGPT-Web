@@ -1,0 +1,26 @@
+name: source-checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  contracts:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out code
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Install pinned pytest
+        run: python3 -m pip install --disable-pip-version-check pytest==8.4.2
+      - name: Run source contracts
+        run: python3 -m pytest -q
+      - name: Verify keyboard transparency
+        run: node tools/verify_keyboard_neutrality_node.js "$GITHUB_WORKSPACE"
+      - name: Validate shell script syntax
+        run: bash -n tools/*.sh
+      - name: Check tracked content hygiene
+        run: python3 tools/check_repository_hygiene.py
+# This workflow intentionally does not build/sign APKs or claim Harmony device support.

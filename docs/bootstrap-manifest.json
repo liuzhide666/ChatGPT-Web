@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-17",
+  "source_archive_name": "ChatGPT-Web-source-1.1.0-Formal-vc113-2026-08-27.tar.gz",
+  "source_archive_sha256": "c059f4c509f1be723982831ad25e32339df75016a47a22ec06553568c4b3ab17",
+  "release_name": "1.1.0",
+  "release_version_code": 113,
+  "known_apk_sha256": "9136ef03010302df2e527fca5b664d4d479f216cbbad5670ca0307ea5ac328ac",
+  "github_remote_created": false,
+  "github_remote_imported": false,
+  "native_harmony_build": false,
+  "note": "GitHub-ready local worktree; contains baseline source and added governance files. This JSON does not attest APK bytes."
+}

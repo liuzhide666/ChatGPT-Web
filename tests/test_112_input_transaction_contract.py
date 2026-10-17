@@ -1,0 +1,4 @@
+from _vc113_keyboard_neutrality import assert_removed_input_architecture
+
+def test_input_intent_transaction_is_removed_in_keyboard_transparent_architecture():
+    assert_removed_input_architecture()

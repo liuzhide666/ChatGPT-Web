@@ -1,0 +1,4 @@
+from _vc113_keyboard_neutrality import assert_native_transparent
+
+def test_no_input_semantic_state_crosses_activity_gecko_or_ic_threads():
+    assert_native_transparent()

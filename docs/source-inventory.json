@@ -1,0 +1,1107 @@
+{
+  "method": "sha256 of original extracted source files",
+  "source_sha256": "c059f4c509f1be723982831ad25e32339df75016a47a22ec06553568c4b3ab17",
+  "retained_files": 220,
+  "files": [
+    {
+      "original": "CANDIDATE-INDEX-1.1.0-vc112.txt",
+      "repository": "docs/history/CANDIDATE-INDEX-1.1.0-vc112.txt",
+      "sha256": "b7dd3b043c9dde003967c02ecd09798c036a03cdac85f319563cc4c8f8a44662"
+    },
+    {
+      "original": "app/build.gradle",
+      "repository": "app/build.gradle",
+      "sha256": "36dec9db668cc177673726f551a1d222cd6e49242f65ce44523ed49b2f993482"
+    },
+    {
+      "original": "app/src/distribution/AndroidManifest.xml",
+      "repository": "app/src/distribution/AndroidManifest.xml",
+      "sha256": "5a1e26c42711645feeaa4eb65dd27049c198b4d25ce535f741873fc399ebcdba"
+    },
+    {
+      "original": "app/src/main/AndroidManifest.xml",
+      "repository": "app/src/main/AndroidManifest.xml",
+      "sha256": "bb1a699b022d78a99ddee4beaac8981bae15e77fa76354616814b0a2a3bf061b"
+    },
+    {
+      "original": "app/src/main/assets/chatgpt_bridge/content.js",
+      "repository": "app/src/main/assets/chatgpt_bridge/content.js",
+      "sha256": "422cf4f8af3bd2bce653460624f137a8c861e4a13e6756f80d1f795e23193fb2"
+    },
+    {
+      "original": "app/src/main/assets/chatgpt_bridge/manifest.json",
+      "repository": "app/src/main/assets/chatgpt_bridge/manifest.json",
+      "sha256": "ea8c862046cc530259cc38e33fbc1aed99e130dced319bf3101a76cddca5a773"
+    },
+    {
+      "original": "app/src/main/assets/chatgpt_bridge/site_adapter.js",
+      "repository": "app/src/main/assets/chatgpt_bridge/site_adapter.js",
+      "sha256": "f903f77c0fd564c0a5204082d6925b401c04c8e2ae0bf11e73946085376ff521"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/AndroidPermissionCoordinator.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/AndroidPermissionCoordinator.java",
+      "sha256": "f0378183331115a4f9c15a7fc8b526d1fc9007386a6a92cd1be16465a2b19e23"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/BrowserDiagnosticsDialog.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/BrowserDiagnosticsDialog.java",
+      "sha256": "2f833d35ba718ce47fb795347ea41a3560ad92c4ee6be9cd8f34fd71f753ce57"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/BrowserHealthSupervisor.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/BrowserHealthSupervisor.java",
+      "sha256": "2b613dd5f5a0e2aa538a28b3cc9eff1d8aac8781cce9a43ded9670320bacacd3"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/ChatGPTContentBridge.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/ChatGPTContentBridge.java",
+      "sha256": "92c2e2fcb59ce7a411e6acea5ef777a78d014cd51767d8e45c7b768810140603"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/ChatGPTGeckoView.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/ChatGPTGeckoView.java",
+      "sha256": "67a71043d91bdf816c5dc3c46716773d5486d644e9cfb096f019c4a3a0475c02"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/CrashRecoveryPolicy.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/CrashRecoveryPolicy.java",
+      "sha256": "1403145dcf5f2273264cd7d3307c3179b1e18cdd2b5808cbbb87e8809d0ee8ba"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/DownloadCoordinator.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/DownloadCoordinator.java",
+      "sha256": "8b5d5092b09c86b0f6c5bb39285a976fa0ddd7f6767e4859d47b9e3046a5852e"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/DownloadMetadata.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/DownloadMetadata.java",
+      "sha256": "2e980e0d966413cc6d6a38e25a272faf7cea8d123f2665898412ababa78183bc"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/ExternalFlowTracker.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/ExternalFlowTracker.java",
+      "sha256": "a1535d4de78db39ca9bf57eda9be1649fb9f8a5e89507d39fa21d780962578a2"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/FilePromptCoordinator.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/FilePromptCoordinator.java",
+      "sha256": "4693ccb676e5894c05c9a4251b2c5619c32575a4260654a4c6e886031913a2eb"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/GeckoMediaPermissionDelegate.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/GeckoMediaPermissionDelegate.java",
+      "sha256": "d796997bf47317ef7dbd5bf94dfa5732598b25933094c4a58e4f17cd54e66cbb"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/GeckoNavigationDelegate.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/GeckoNavigationDelegate.java",
+      "sha256": "4eebe5e9d6264201d05fcdf2efbed5a7c48c90dd539ef7a52956db28629d4c4c"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/GeckoRuntimeHolder.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/GeckoRuntimeHolder.java",
+      "sha256": "fa15fbdbc1a1015b356a12eae4aaa77abde9f0dcf705df679206432d0a740176"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/GeckoSessionController.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/GeckoSessionController.java",
+      "sha256": "2324acc83ac1a14ba41e7e75fa15ad50c14451e2cd3caee253f1f4af4db76ee0"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/LazyDownloadHandler.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/LazyDownloadHandler.java",
+      "sha256": "f075c35a5f60752be4a6c36bf598a06151784e63b7df7b2a9794ee611c06f1ac"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/MainActivity.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/MainActivity.java",
+      "sha256": "29c376cabf186450a695913c3c638962df1da3d6ca75226a071a1f1265d382a2"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/MediaCrashTraceStore.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/MediaCrashTraceStore.java",
+      "sha256": "999ce23ec7607f911d230323240f7e070a26f9d9e985ed5a4b31960a7fc1aca9"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/MediaDiagnostics.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/MediaDiagnostics.java",
+      "sha256": "e05345c2a52f66148f176bf88d8697ea8037232ada2736babea71dd3d717e6ac"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/MediaSelectionPolicy.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/MediaSelectionPolicy.java",
+      "sha256": "61b578d29f327dd7f5d1f1e6cd8ac3aecb84c186b0ab05419532438929586a6c"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/MediaStoreDownloadsCompat.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/MediaStoreDownloadsCompat.java",
+      "sha256": "50fdb82f6c42bae571e3b7c8bb5108f662fd1edc213379c50b9b8eba839ba948"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/NavigationPolicy.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/NavigationPolicy.java",
+      "sha256": "615c6664968f00973c47b03fd49a547e58d702cefc21d0a6128ab84367272627"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/NetworkStateMonitor.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/NetworkStateMonitor.java",
+      "sha256": "12b18c87b992c7a9383562c853a4e42865f29e6b4e53e12d129c4c74e80c75b1"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/StartupFailureInfo.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/StartupFailureInfo.java",
+      "sha256": "469055e6ded0a380b6997b630b4e9a022ad172d453e6e9bb2d753a4c2f7238ce"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/StartupStateStore.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/StartupStateStore.java",
+      "sha256": "76a415c10355166c72c624c012a8ae019a138f5c4ae100c89129cca6f3c977bd"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/SystemBarPolicy.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/SystemBarPolicy.java",
+      "sha256": "639bbbddc098d3eea1daae6bc979ac7905c5bf2fceeb7a177a1952b6793a6440"
+    },
+    {
+      "original": "app/src/main/java/com/liuchenlin/chatgptweb/TrustedOriginPolicy.java",
+      "repository": "app/src/main/java/com/liuchenlin/chatgptweb/TrustedOriginPolicy.java",
+      "sha256": "85669b050c15037d85385a5504e92380fbd3da8c157c1ccd269111871fb5e807"
+    },
+    {
+      "original": "app/src/main/res/drawable-nodpi/ic_launcher_foreground.png",
+      "repository": "app/src/main/res/drawable-nodpi/ic_launcher_foreground.png",
+      "sha256": "b6bdad68b38d3b1c0865e2202b24fbad0c8f4e8454911e7cb2b0716f6b74dfcf"
+    },
+    {
+      "original": "app/src/main/res/drawable-nodpi/ic_launcher_monochrome.png",
+      "repository": "app/src/main/res/drawable-nodpi/ic_launcher_monochrome.png",
+      "sha256": "f1afabc736e33bc85a8e37ba6bb5c6d07cf8217defa4cc0f47065d64c8e2fecf"
+    },
+    {
+      "original": "app/src/main/res/layout/activity_main.xml",
+      "repository": "app/src/main/res/layout/activity_main.xml",
+      "sha256": "61105c52d4309eb49f471efccd1fd66d7cabccf8ea9e883f74b1d19114e95b4a"
+    },
+    {
+      "original": "app/src/main/res/layout/view_recovery.xml",
+      "repository": "app/src/main/res/layout/view_recovery.xml",
+      "sha256": "b47c04eaaadceddd765b629fdc303cf791a9467f3dab0a00d099fa5ea43e2fee"
+    },
+    {
+      "original": "app/src/main/res/layout/view_startup_recovery.xml",
+      "repository": "app/src/main/res/layout/view_startup_recovery.xml",
+      "sha256": "e20e50f0803d9a23edc261e8db6eb9813264c851413555a1ca84696fe20125d7"
+    },
+    {
+      "original": "app/src/main/res/mipmap-anydpi/ic_launcher.xml",
+      "repository": "app/src/main/res/mipmap-anydpi/ic_launcher.xml",
+      "sha256": "d0b7050d918713b6bd1598265d44b6553aecc667db9be269c11c75b61521ca75"
+    },
+    {
+      "original": "app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml",
+      "repository": "app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml",
+      "sha256": "a9476ffa50e6412caac2a41c3dbc2df366c90e27dccdc9ce9b6346dd90be998c"
+    },
+    {
+      "original": "app/src/main/res/values/colors.xml",
+      "repository": "app/src/main/res/values/colors.xml",
+      "sha256": "da9539acdbe8d4861882d7e0926d126284808ff1b8b5fb822373a08de57fb095"
+    },
+    {
+      "original": "app/src/main/res/values/strings.xml",
+      "repository": "app/src/main/res/values/strings.xml",
+      "sha256": "a8e5620ab811ae1242e7f251bc1a30f44bd7fa139541474f4085982d9daa977c"
+    },
+    {
+      "original": "app/src/main/res/values/styles.xml",
+      "repository": "app/src/main/res/values/styles.xml",
+      "sha256": "11f6ffb3a8fd597bb37f946d4110ca8e49203306480b9c6e7443cdbaf1adcb8e"
+    },
+    {
+      "original": "build.gradle",
+      "repository": "build.gradle",
+      "sha256": "47e094b953d3951ab097c173a334a41a5ae80f9d9980f459b1b7b48436df7805"
+    },
+    {
+      "original": "docs/0.4.0-gecko-probe-device-test-protocol.md",
+      "repository": "docs/0.4.0-gecko-probe-device-test-protocol.md",
+      "sha256": "b058b3c0d82fdc0e828d5412adf2055940f3d76b9f68e983e2d238aff237c266"
+    },
+    {
+      "original": "docs/0.4.0-geckoview-offline-verification-2026-08-25.txt",
+      "repository": "docs/0.4.0-geckoview-offline-verification-2026-08-25.txt",
+      "sha256": "5aadd841461caf27677596f2a795f90487e97d362be7f675a832b3de6bc102c3"
+    },
+    {
+      "original": "docs/0.4.0-host-verification-2026-08-24.txt",
+      "repository": "docs/0.4.0-host-verification-2026-08-24.txt",
+      "sha256": "aa71c094d8eaa3077ece3149172a24f522e2774ed469c24b7e0c46b83d2e6f14"
+    },
+    {
+      "original": "docs/0.4.0-host-verification-2026-08-25.txt",
+      "repository": "docs/0.4.0-host-verification-2026-08-25.txt",
+      "sha256": "786ac617eea24aba22fbf6485a1abbdeefb407dac14c76a6b28766f827012b56"
+    },
+    {
+      "original": "docs/0.4.0-probe-build-static-verification-2026-08-25.md",
+      "repository": "docs/0.4.0-probe-build-static-verification-2026-08-25.md",
+      "sha256": "f5684a05e01c75e4632be9412794fcf03440246f02bcc2445152bb5dd705e551"
+    },
+    {
+      "original": "docs/2026-08-27-1.0.2-rc3/ChatGPT-Web-1.0.2-RC3-IMPLEMENTATION-PLAN-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.0.2-rc3/ChatGPT-Web-1.0.2-RC3-IMPLEMENTATION-PLAN-2026-08-27.md",
+      "sha256": "73bb42d649362094a8bd3a97e4ae6d9d39a929049f6cfcc4aebbf0c4425f41a2"
+    },
+    {
+      "original": "docs/2026-08-27-1.0.2-rc3/ChatGPT-Web-1.0.2-RC3-Input-Freshness-DESIGN-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.0.2-rc3/ChatGPT-Web-1.0.2-RC3-Input-Freshness-DESIGN-2026-08-27.md",
+      "sha256": "5736c4e357ff2c44a761bda3ea9e0c6d5de280722a91c1df9e921464fb5d7784"
+    },
+    {
+      "original": "docs/2026-08-27-1.0.2-rc4/ChatGPT-Web-1.0.2-RC4-Post-RC3-Research-DESIGN-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.0.2-rc4/ChatGPT-Web-1.0.2-RC4-Post-RC3-Research-DESIGN-2026-08-27.md",
+      "sha256": "070efcbf921db9c5370711d0a9e42a7e207d11e9c94735bf28323c388862778b"
+    },
+    {
+      "original": "docs/2026-08-27-1.0.3/ChatGPT-Web-1.0.3-IMPLEMENTATION-PLAN-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.0.3/ChatGPT-Web-1.0.3-IMPLEMENTATION-PLAN-2026-08-27.md",
+      "sha256": "9e07b07075259e7158c992df46f8cdbe1b6a2c8c166f0b8e43c478dc3bd2956e"
+    },
+    {
+      "original": "docs/2026-08-27-1.0.3/ChatGPT-Web-1.0.3-ShiftEnter-Freshness-DESIGN-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.0.3/ChatGPT-Web-1.0.3-ShiftEnter-Freshness-DESIGN-2026-08-27.md",
+      "sha256": "7ee6674d6d61fd851704aaaeb71400b79a6c5bbf1b600692e5e452582e762b90"
+    },
+    {
+      "original": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-FORMAL-CANDIDATE-GATE-2026-08-27.txt",
+      "repository": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-FORMAL-CANDIDATE-GATE-2026-08-27.txt",
+      "sha256": "47baf62effbe2d422c8e7436f6cd805ea8faa1354805b056ad6c7be45906cd54"
+    },
+    {
+      "original": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-FORMAL-CANDIDATE-Release-Review-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-FORMAL-CANDIDATE-Release-Review-2026-08-27.md",
+      "sha256": "62594dfafc35e65c482aa799e71a906847801143e0570772a321fac4f4a48191"
+    },
+    {
+      "original": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-FORMAL-DESIGN-AMENDMENT-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-FORMAL-DESIGN-AMENDMENT-2026-08-27.md",
+      "sha256": "89a6c51b193eb94fa8bc3b9c48c1a44445f4b95f6eba61e358ae780aa9f485b7"
+    },
+    {
+      "original": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-FORMAL-IMPLEMENTATION-PLAN-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-FORMAL-IMPLEMENTATION-PLAN-2026-08-27.md",
+      "sha256": "9164a51a57f052c8122d9a56fb5ffed9476c023b03f1793c9b65cc011a4b1897"
+    },
+    {
+      "original": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-FORMAL-Target-Device-Gate-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-FORMAL-Target-Device-Gate-2026-08-27.md",
+      "sha256": "3e70a66aa4f97b7a0d2d2a9633388c98c7e0bd3ee523a8c13d2f9b65dbe0dda3"
+    },
+    {
+      "original": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-IMPLEMENTATION-PLAN-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-IMPLEMENTATION-PLAN-2026-08-27.md",
+      "sha256": "cf5faed4bf021a6e9eb680c605e9828510c75e16acc9ab694ed133854cd6240f"
+    },
+    {
+      "original": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-Native-Input-Browser-Health-DESIGN-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-Native-Input-Browser-Health-DESIGN-2026-08-27.md",
+      "sha256": "1e947c23255d73d945ee2a703af585b860229a604a936a06247135b288f255fc"
+    },
+    {
+      "original": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-RC2-vc112-FINAL-PLAN-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-RC2-vc112-FINAL-PLAN-2026-08-27.md",
+      "sha256": "665c6df0bb4bd45e15937754cca559e626fdb463619441c226e43fb1f1d4c485"
+    },
+    {
+      "original": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-RC2-vc112-GATE-2026-08-27.txt",
+      "repository": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-RC2-vc112-GATE-2026-08-27.txt",
+      "sha256": "81b8dd1cadb6570334ba9a5d4b4521822e90d2752a937c9d4adee60098fa420f"
+    },
+    {
+      "original": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-RC2-vc112-Release-Review-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-RC2-vc112-Release-Review-2026-08-27.md",
+      "sha256": "0cadc7ab77af45a31a70d31627b1371be3e07149fe35e8589024e4b33df40001"
+    },
+    {
+      "original": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-RC2-vc112-TARGET-FAILURE-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-RC2-vc112-TARGET-FAILURE-2026-08-27.md",
+      "sha256": "1f8acec3ff4f5a8797967e4b110dcff77bdfe4c8444fb51f2c76ead88f7661d7"
+    },
+    {
+      "original": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-RC2-vc112-Target-Device-Gate-F-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-RC2-vc112-Target-Device-Gate-F-2026-08-27.md",
+      "sha256": "3013bf20e0e55ccc8fb3e75f626411b914cfc9c39da69c2bd4bf40abe1fdc11e"
+    },
+    {
+      "original": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-RC3-vc113-CONTINUE-PART-2.md",
+      "repository": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-RC3-vc113-CONTINUE-PART-2.md",
+      "sha256": "36761c5851b05acc315d1271f2dbd16042bf43ed01821a2a9151fce41d1a8fce"
+    },
+    {
+      "original": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-RC3-vc113-FINAL-DESIGN-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-RC3-vc113-FINAL-DESIGN-2026-08-27.md",
+      "sha256": "38ef1c6cc67545924b50b0071c65d428dee6b351828fa456748ce8bed9c87d38"
+    },
+    {
+      "original": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-RC3-vc113-THREE-PART-IMPLEMENTATION-PLAN-2026-08-27.md",
+      "repository": "docs/2026-08-27-1.1.0/ChatGPT-Web-1.1.0-RC3-vc113-THREE-PART-IMPLEMENTATION-PLAN-2026-08-27.md",
+      "sha256": "f4618ad52a99f8f705e34069b6f9167db62dae03dba585de3dda27b6b6bb75e1"
+    },
+    {
+      "original": "docs/superpowers/plans/2026-08-24-chatgpt-web-0.4.0-geckoview.md",
+      "repository": "docs/superpowers/plans/2026-08-24-chatgpt-web-0.4.0-geckoview.md",
+      "sha256": "04e1c1129df35b8349306ebc0e34f727213520d6f4a0d10bcfc5cb71d44cbbed"
+    },
+    {
+      "original": "docs/superpowers/plans/2026-08-25-chatgpt-web-0.4.0-huawei-runtimefix-r0.md",
+      "repository": "docs/superpowers/plans/2026-08-25-chatgpt-web-0.4.0-huawei-runtimefix-r0.md",
+      "sha256": "a5e12e91bc0cf3b35cfba4ee0970ba470cdf3c1a62caa3d92afbdb5e376c4c35"
+    },
+    {
+      "original": "docs/superpowers/plans/2026-08-26-beta2-download-ime-enter.md",
+      "repository": "docs/superpowers/plans/2026-08-26-beta2-download-ime-enter.md",
+      "sha256": "7f04980a38bfde8fb6b808fa5ce65999361ec7e1dea35b68f9d3e93c3ac84f32"
+    },
+    {
+      "original": "docs/superpowers/plans/2026-08-26-chatgpt-web-0.4.0-beta1-browserfit.md",
+      "repository": "docs/superpowers/plans/2026-08-26-chatgpt-web-0.4.0-beta1-browserfit.md",
+      "sha256": "f270e42895d4c987f4139ec79d2f3fc206a26b1ec342cc906a9aa4c9a4ad0688"
+    },
+    {
+      "original": "docs/superpowers/specs/2026-08-24-chatgpt-web-0.4.0-geckoview-design.md",
+      "repository": "docs/superpowers/specs/2026-08-24-chatgpt-web-0.4.0-geckoview-design.md",
+      "sha256": "1fc86547e1acd410d625ba29dcf411029139d022edaddfb462781cde466518b0"
+    },
+    {
+      "original": "docs/superpowers/specs/2026-08-26-beta2-download-ime-enter-design.md",
+      "repository": "docs/superpowers/specs/2026-08-26-beta2-download-ime-enter-design.md",
+      "sha256": "e19f9a21a7e0a2743353beb38622cdbfc75f1dc8fefa5c8925d5b052820b70ce"
+    },
+    {
+      "original": "gradle.properties",
+      "repository": "gradle.properties",
+      "sha256": "4146d467a82b8958ab380f77d3fd57bcc7d75f235b9e061100da33054d85cd29"
+    },
+    {
+      "original": "host-test-stubs/android/content/Context.java",
+      "repository": "host-test-stubs/android/content/Context.java",
+      "sha256": "97a6ba32c16b7c78fa5414aee5b061a152e21515f3d3a3d99a9ec3ff38f7b4a8"
+    },
+    {
+      "original": "host-test-stubs/android/net/Uri.java",
+      "repository": "host-test-stubs/android/net/Uri.java",
+      "sha256": "315793932b262441e9a7ab85290e289ec65712d9936044bae4ddd620906f9ad1"
+    },
+    {
+      "original": "host-test-stubs/android/view/inputmethod/EditorInfo.java",
+      "repository": "host-test-stubs/android/view/inputmethod/EditorInfo.java",
+      "sha256": "98a1b80c94d0ce58cc377b17fe729357cee5e48ae633dab7db9c06a3551afb1f"
+    },
+    {
+      "original": "host-test-stubs/com/liuchenlin/chatgptweb/R.java",
+      "repository": "host-test-stubs/com/liuchenlin/chatgptweb/R.java",
+      "sha256": "424111f18e6d5e47d26cf3fec907b394e7a5d4e9631a0a5b36accd370888c5e3"
+    },
+    {
+      "original": "host-test-stubs/org/json/JSONObject.java",
+      "repository": "host-test-stubs/org/json/JSONObject.java",
+      "sha256": "e5eb219cf3ac0c896e2035ede66b37f86ef3b6d811d34962e4d4d63c6b24430c"
+    },
+    {
+      "original": "host-test-stubs/org/mozilla/geckoview/AllowOrDeny.java",
+      "repository": "host-test-stubs/org/mozilla/geckoview/AllowOrDeny.java",
+      "sha256": "b8f3d80cbafe3eb0db12571d6309f3f06b8bf919eaa8a1dc5eaf242c4929a3af"
+    },
+    {
+      "original": "host-test-stubs/org/mozilla/geckoview/GeckoResult.java",
+      "repository": "host-test-stubs/org/mozilla/geckoview/GeckoResult.java",
+      "sha256": "3ea838f1fa2c08f9e2031470c83ee3632f78c0591c8ce64e46390edd17a2d960"
+    },
+    {
+      "original": "host-test-stubs/org/mozilla/geckoview/GeckoRuntime.java",
+      "repository": "host-test-stubs/org/mozilla/geckoview/GeckoRuntime.java",
+      "sha256": "0ebc55d21b01ee805233e6168ec7aebe879cb4834180a0b30a3486ca787623f8"
+    },
+    {
+      "original": "host-test-stubs/org/mozilla/geckoview/GeckoSession.java",
+      "repository": "host-test-stubs/org/mozilla/geckoview/GeckoSession.java",
+      "sha256": "54822eddebded6ce9aa10f50afe1084fdc1dc170e4194f1257ea6ac6d8b76be3"
+    },
+    {
+      "original": "host-test-stubs/org/mozilla/geckoview/GeckoView.java",
+      "repository": "host-test-stubs/org/mozilla/geckoview/GeckoView.java",
+      "sha256": "ba3d0a25297d9ffd67c3393017f538d868a50e062d226c449ab7b1da24bf46e9"
+    },
+    {
+      "original": "host-test-stubs/org/mozilla/geckoview/SlowScriptResponse.java",
+      "repository": "host-test-stubs/org/mozilla/geckoview/SlowScriptResponse.java",
+      "sha256": "c505dc4e5f612459f9104d4b6d5cf93bb326e166db8b64ac8d717660e5270eb6"
+    },
+    {
+      "original": "host-test-stubs/org/mozilla/geckoview/WebExtension.java",
+      "repository": "host-test-stubs/org/mozilla/geckoview/WebExtension.java",
+      "sha256": "9fc2cc4fe82ca90048c7eb898d8a4ad87dc24c1d2a5c7fe566a13318a0771068"
+    },
+    {
+      "original": "host-test-stubs/org/mozilla/geckoview/WebExtensionController.java",
+      "repository": "host-test-stubs/org/mozilla/geckoview/WebExtensionController.java",
+      "sha256": "78723dfff09cf1960b9985b318b0dd8684e1abf1720574d265ffb7697321a6f9"
+    },
+    {
+      "original": "host-test-stubs/org/mozilla/geckoview/WebResponse.java",
+      "repository": "host-test-stubs/org/mozilla/geckoview/WebResponse.java",
+      "sha256": "be3efd5ec7848a92ff24391c8ef234586f7c3cae8ba5c3b06146d5d8a0374c2c"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/AndroidPermissionCoordinatorTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/AndroidPermissionCoordinatorTest.java",
+      "sha256": "d71a20c745eb682b767c7d2fda05781b4d2cd8e880975aba6e696b4406111eb7"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/BrowserDiagnosticsDialogTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/BrowserDiagnosticsDialogTest.java",
+      "sha256": "4a921eaea181d3e72f5e01392cb991bc67f1b15fb00e88ec7d633891da5f930f"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/BrowserHealthProbeTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/BrowserHealthProbeTest.java",
+      "sha256": "8d8d3bf0b79f8e9566bfa85688355bfcc9f038dddd948d11f1004d69a5dfabcf"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/BrowserHealthSafetyBlockerTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/BrowserHealthSafetyBlockerTest.java",
+      "sha256": "053c235307b820c4d590850cdc0574678ebf34059e89579d164ff9aab2485093"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/BrowserHealthSupervisorNetworkTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/BrowserHealthSupervisorNetworkTest.java",
+      "sha256": "5e03b7a6fb306bf9ee911a575ae37daa49c881f8c50e756014fa6a53253860c0"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/BrowserHealthSupervisorTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/BrowserHealthSupervisorTest.java",
+      "sha256": "b74ce68a121fdb0fe3d304ff5a223cf4a5ee1286a4a626ee005034d401426b82"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/ChatGPTContentBridgeTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/ChatGPTContentBridgeTest.java",
+      "sha256": "c3fcebafdb48db41bc0161049d09fc17d775a196d8fb170eb5b2d71280e098ed"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/CrashRecoveryPolicyTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/CrashRecoveryPolicyTest.java",
+      "sha256": "5f1d720fa79481f0689c643706a1b26440236db757a2e63d7237ad761665ead9"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/DownloadCoordinatorTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/DownloadCoordinatorTest.java",
+      "sha256": "309395707e5c7990236747b80d807d1e4004618327992b6cfdb6bc066c27a559"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/DownloadMetadataTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/DownloadMetadataTest.java",
+      "sha256": "29c478a48fcf0e83e35f61586736b1c80d3b5b296d6cea6b5f6d391099ad3753"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/ExternalFlowTrackerTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/ExternalFlowTrackerTest.java",
+      "sha256": "c206f90cbba8d4c8e0eb269bc02c3e81660c4831f22bf662e727037d5bab11bb"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/FilePromptCoordinatorTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/FilePromptCoordinatorTest.java",
+      "sha256": "baa4dd4c2a8da597464b1bc4bbd536e12f793a32380cdc6b27a16539c0a7c3ec"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/GeckoMediaPermissionDelegateTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/GeckoMediaPermissionDelegateTest.java",
+      "sha256": "596b250115f5dfe0e79d1381a923bde9e741da5ee11a0dd04b9a5221a4b4a838"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/GeckoNavigationDelegateTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/GeckoNavigationDelegateTest.java",
+      "sha256": "eab66c700bba37616dfaa222ae5af596133781b6ed44d6cb3141ff2669170b64"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/GeckoNavigationGenerationTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/GeckoNavigationGenerationTest.java",
+      "sha256": "62525a6965e63cc24a5d6f57741846b817abe1ade48322a1baaf11b728f84248"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/GeckoRuntimeFailureStateTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/GeckoRuntimeFailureStateTest.java",
+      "sha256": "1a2e7a76cbb9b69bd29cfbeb6dd6e6a07e9eaef98f85c57b6ae03d8fdd81e14f"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/GeckoRuntimeHolderTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/GeckoRuntimeHolderTest.java",
+      "sha256": "d0981920f8e53323d49ed53abec0a39d0810192b93b51a0fca88e7d84bab58a7"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/GeckoSessionControllerTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/GeckoSessionControllerTest.java",
+      "sha256": "80d29febf21366ab5836317ab57d3d1a7ea7fc74b9043fe8b38396cb70c2d2bb"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/KeyboardNeutralityReflectionTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/KeyboardNeutralityReflectionTest.java",
+      "sha256": "376acd6ed05856082eaac860a28f770ba4c192b1ea23661b1c7e606631286d9f"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/LazyDownloadHandlerTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/LazyDownloadHandlerTest.java",
+      "sha256": "64e1c8808c219b91bade341164fad48a8d8b463bc000da0aed9e77be1a52460b"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/LongConversationRecoveryTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/LongConversationRecoveryTest.java",
+      "sha256": "618bee3b778305dd16fdec11e0fe4540dd8978ba515059c4a1aab5fb99fae764"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/MediaCrashTraceStoreTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/MediaCrashTraceStoreTest.java",
+      "sha256": "0829a000a9608b124101a633cff300ec9a7d2f8a13c76b1ee7bed8863f72862b"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/MediaDiagnosticsTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/MediaDiagnosticsTest.java",
+      "sha256": "b04938e75edc8e78c7e00d9bab3270618be862e334c888c35ca7ad5c4e311445"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/MediaSelectionPolicyTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/MediaSelectionPolicyTest.java",
+      "sha256": "573d69cd172b72af2eebe406e8bf1871567814fa0e0ae34f038324677edd2ffd"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/NavigationPolicyTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/NavigationPolicyTest.java",
+      "sha256": "ce1f07ca71f1d0050bce62df8777484b4cf15671ea1edd3f359004b15c849eb8"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/PageHealthPolicyTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/PageHealthPolicyTest.java",
+      "sha256": "502ef7e509af0273d25eadc55532ce424a3ca65e574d767ab1edb4a89c9b7e0a"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/StartupFailureInfoTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/StartupFailureInfoTest.java",
+      "sha256": "ca11a169df5468fc6e4b2f6f2fd43674b9a04bb0eb0c9c7f3cf72cd7afb4a8c1"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/StartupStateStoreTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/StartupStateStoreTest.java",
+      "sha256": "2dd099bdad1e91ddb78d1144f28cc9524d8936e5403d14e4464f8e327b6d7712"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/SystemBarPolicyTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/SystemBarPolicyTest.java",
+      "sha256": "34655567e881c5239ba974b089fd5f844af02efbbcb79169e7ed96dd02075943"
+    },
+    {
+      "original": "host-tests/com/liuchenlin/chatgptweb/TrustedOriginPolicyTest.java",
+      "repository": "host-tests/com/liuchenlin/chatgptweb/TrustedOriginPolicyTest.java",
+      "sha256": "bf836071d3b4ed753bda5cd04661fac4b1604a20dcaaa5ab614ba9ee9de462f5"
+    },
+    {
+      "original": "settings.gradle",
+      "repository": "settings.gradle",
+      "sha256": "37e211f9aa483e4a7caab3bbc59e551fb1202fb9bc6e0522207a775c3da86610"
+    },
+    {
+      "original": "tests/_project_paths.py",
+      "repository": "tests/_project_paths.py",
+      "sha256": "758f2f0ac354a5bd22a8ef5ff78e30a83844241a1aad54b6c23135e9aa6ef135"
+    },
+    {
+      "original": "tests/_vc113_keyboard_neutrality.py",
+      "repository": "tests/_vc113_keyboard_neutrality.py",
+      "sha256": "782bb975274a77697992444c73e77dae5a2c4a8c8b00c287e6b13f874751d7ab"
+    },
+    {
+      "original": "tests/test_040_contract.py",
+      "repository": "tests/test_040_contract.py",
+      "sha256": "3403fcd89a62a10a17a0dcfaf081134a926900820e973d29ada7289455d0b33f"
+    },
+    {
+      "original": "tests/test_102_bridge_contract.py",
+      "repository": "tests/test_102_bridge_contract.py",
+      "sha256": "7c0fad395279b18ab414a1fe3c369e516fff1d8a848dda98eff77da1882f9790"
+    },
+    {
+      "original": "tests/test_102_health_contract.py",
+      "repository": "tests/test_102_health_contract.py",
+      "sha256": "f1a86efef615f6a70fefcc0e8c252fb061bfd6bfc669ebc3c88a649fbd8029fa"
+    },
+    {
+      "original": "tests/test_102_integration_contract.py",
+      "repository": "tests/test_102_integration_contract.py",
+      "sha256": "2f1f77c881e94c09b6d3f2d793c96d64e1f754b7e442c38599a3cf0ecf23837b"
+    },
+    {
+      "original": "tests/test_102_recovery_contract.py",
+      "repository": "tests/test_102_recovery_contract.py",
+      "sha256": "a1f5268f773e283e42318c3051b20c5f536771fbc8b9ae33b1e2e3f89046248e"
+    },
+    {
+      "original": "tests/test_103_cache_freshness_contract.py",
+      "repository": "tests/test_103_cache_freshness_contract.py",
+      "sha256": "f189a223299804b32339fe0e1070dc8a4bb6092d12b856ad6796c6211b33fffb"
+    },
+    {
+      "original": "tests/test_103_input_router_contract.py",
+      "repository": "tests/test_103_input_router_contract.py",
+      "sha256": "32f444fc97fef64dd7b8d6f40f33098325ed18856ba0bdf70079f01fc8f377e6"
+    },
+    {
+      "original": "tests/test_104_review_contract.py",
+      "repository": "tests/test_104_review_contract.py",
+      "sha256": "daff1188670a3993933caba6ffe2b1746ad6a3a3ce5a6b89f4354935c0177ffc"
+    },
+    {
+      "original": "tests/test_105_formal_contract.py",
+      "repository": "tests/test_105_formal_contract.py",
+      "sha256": "fb7c6653258ae85d61df8ee287267c1c694e3f25d1869843bfb6a870ffd66251"
+    },
+    {
+      "original": "tests/test_110_bridge_reconnect_contract.py",
+      "repository": "tests/test_110_bridge_reconnect_contract.py",
+      "sha256": "02fe602915e155a1352381fa684763e1b3cbc5fd949d6b64d84550805537be59"
+    },
+    {
+      "original": "tests/test_110_composer_ownership_generation_contract.py",
+      "repository": "tests/test_110_composer_ownership_generation_contract.py",
+      "sha256": "c79019d080f8d904ee4741fa6c631cbaafd03b43a63132a5b77589436ea70727"
+    },
+    {
+      "original": "tests/test_110_consumed_repeat_contract.py",
+      "repository": "tests/test_110_consumed_repeat_contract.py",
+      "sha256": "15397ff415e02ba1a373a5f24aae8d35b0edaa63ff19bba999b5c1348925fe22"
+    },
+    {
+      "original": "tests/test_110_hardware_linebreak_native_contract.py",
+      "repository": "tests/test_110_hardware_linebreak_native_contract.py",
+      "sha256": "9743a72b748efa8a7d56fdf81da7fb0f39f8c0ec32123aa0c214f344267cb19b"
+    },
+    {
+      "original": "tests/test_110_health_supervisor_contract.py",
+      "repository": "tests/test_110_health_supervisor_contract.py",
+      "sha256": "582bb587b2cda9ba08c7bb74cefc3234f9b1435ec797ed737a025f27536abbf9"
+    },
+    {
+      "original": "tests/test_110_input_threading_contract.py",
+      "repository": "tests/test_110_input_threading_contract.py",
+      "sha256": "a6d5ad00477a9300b5429daf9d0f428a0b2ece88e2e1f31352cd535769fbbb92"
+    },
+    {
+      "original": "tests/test_110_input_trace_diagnostics_contract.py",
+      "repository": "tests/test_110_input_trace_diagnostics_contract.py",
+      "sha256": "3139ccd80bfde3d351e47330ce9a13e74db63e9d581ebe3fa7aeda4b80f351ac"
+    },
+    {
+      "original": "tests/test_110_multiline_native_fallback_contract.py",
+      "repository": "tests/test_110_multiline_native_fallback_contract.py",
+      "sha256": "92cb025432fe5b573a4d20fc02287da957c3ef8e94a7db2cb6bd433153895fc4"
+    },
+    {
+      "original": "tests/test_110_native_commit_linebreak_contract.py",
+      "repository": "tests/test_110_native_commit_linebreak_contract.py",
+      "sha256": "aaf2785343225f9f8cd745399094f85ff3dc6d09f04fbf484e6d22022200afe7"
+    },
+    {
+      "original": "tests/test_110_native_composition_contract.py",
+      "repository": "tests/test_110_native_composition_contract.py",
+      "sha256": "7586ba34641c6d225d1a15f1264176ce3e29111f4964579df41c3da80df722b7"
+    },
+    {
+      "original": "tests/test_110_native_input_contract.py",
+      "repository": "tests/test_110_native_input_contract.py",
+      "sha256": "15d97c8cf7bb4449dfccd213a1189a656d66584bc9f6bab65da5ce63c490b7db"
+    },
+    {
+      "original": "tests/test_110_native_linebreak_contract.py",
+      "repository": "tests/test_110_native_linebreak_contract.py",
+      "sha256": "0f03fbaec87ca8d2ec1a212a0cfde414fe98c952c6d94ad9eb4f2fb7d68c3524"
+    },
+    {
+      "original": "tests/test_110_native_linebreak_resource_isolation_contract.py",
+      "repository": "tests/test_110_native_linebreak_resource_isolation_contract.py",
+      "sha256": "86a24d8f595e739a5f818b942b313e96d4c5ef055aa7f64eee2b55eeecf2ea57"
+    },
+    {
+      "original": "tests/test_110_native_linebreak_ui_contract.py",
+      "repository": "tests/test_110_native_linebreak_ui_contract.py",
+      "sha256": "dbb9399ace708f622948ff9cab8defd243cad9d39da14d680c5c4ddc4b614e3a"
+    },
+    {
+      "original": "tests/test_110_network_recovery_contract.py",
+      "repository": "tests/test_110_network_recovery_contract.py",
+      "sha256": "6a068ec818058127e422fa86ca8fd5de8daafeabc3d43ac37b8fed105801dbf3"
+    },
+    {
+      "original": "tests/test_110_release_manifest_hardening_contract.py",
+      "repository": "tests/test_110_release_manifest_hardening_contract.py",
+      "sha256": "5adf8f860db607f09bc40d34d497ffc4de7715bdbe998413c94cf8cc59e893e6"
+    },
+    {
+      "original": "tests/test_110_reproducible_formal_gate_contract.py",
+      "repository": "tests/test_110_reproducible_formal_gate_contract.py",
+      "sha256": "7f4cdb594f04086d03a97450415e390cb444a8257adecaa6703774084a29913f"
+    },
+    {
+      "original": "tests/test_110_session_state_liveness_contract.py",
+      "repository": "tests/test_110_session_state_liveness_contract.py",
+      "sha256": "bd66ec1bdb1b969414b8a66d29a14f4879fa446eaea4cef2002504e1d33e2567"
+    },
+    {
+      "original": "tests/test_110_site_adapter_contract.py",
+      "repository": "tests/test_110_site_adapter_contract.py",
+      "sha256": "7278e55784dd9ef3ebe24a24b233ffbcdd617b8a97dda5adacff866a23031017"
+    },
+    {
+      "original": "tests/test_110_version_contract.py",
+      "repository": "tests/test_110_version_contract.py",
+      "sha256": "29d9bb91758f2e05e5e8d41a76f569012c03272f88d999972a29ef0271a18b3d"
+    },
+    {
+      "original": "tests/test_111_command_ack_contract.py",
+      "repository": "tests/test_111_command_ack_contract.py",
+      "sha256": "33c80176f794a8b43732786b6bd0639fdbd1092bb00720fe530fcd338d6bcf7d"
+    },
+    {
+      "original": "tests/test_111_formal_candidate_builder_contract.py",
+      "repository": "tests/test_111_formal_candidate_builder_contract.py",
+      "sha256": "069c12c7a91d223b973d6185ea8462bd60f124289e8c69353bf0ad6009b1f054"
+    },
+    {
+      "original": "tests/test_111_formal_version_contract.py",
+      "repository": "tests/test_111_formal_version_contract.py",
+      "sha256": "f414fa1dcf2b551a6b4abfb55a3addcbfa65dd31469ddedac14a0b8668fd621f"
+    },
+    {
+      "original": "tests/test_111_gecko_health_signal_contract.py",
+      "repository": "tests/test_111_gecko_health_signal_contract.py",
+      "sha256": "fecf2e6b4457e4bdd3871efe40c93c08bd7c64abde1e7d833aac31dbce2b2ea9"
+    },
+    {
+      "original": "tests/test_111_geckoview153_abi_gate_contract.py",
+      "repository": "tests/test_111_geckoview153_abi_gate_contract.py",
+      "sha256": "11ce252bd03699e9c6576a78f141c5155b1ab456ac1e0efa53164d554c750f9d"
+    },
+    {
+      "original": "tests/test_111_release_dex_gate_contract.py",
+      "repository": "tests/test_111_release_dex_gate_contract.py",
+      "sha256": "c886f4d122e2f58e7ef0b54647cb308930bd61d90a8b524b39838fd937fd186f"
+    },
+    {
+      "original": "tests/test_111_release_r_generation_contract.py",
+      "repository": "tests/test_111_release_r_generation_contract.py",
+      "sha256": "a7b229edf3009e8b27a3c686804e2527d076cd152307d2e3f6b6d063ad5f0802"
+    },
+    {
+      "original": "tests/test_112_activity_key_ingress_contract.py",
+      "repository": "tests/test_112_activity_key_ingress_contract.py",
+      "sha256": "bc134f448bf7f10802329d7861689247fae1ade582ffb0a90141af9d519324e3"
+    },
+    {
+      "original": "tests/test_112_bridge_version_contract.py",
+      "repository": "tests/test_112_bridge_version_contract.py",
+      "sha256": "184471a86d40dd8bdb209016c0699046e5e266c00bc00659c7f6500f24ffc1fc"
+    },
+    {
+      "original": "tests/test_112_dedup_contract.py",
+      "repository": "tests/test_112_dedup_contract.py",
+      "sha256": "6cf65fcf5151bbdc76430cfdfa6469cba69ae8998b918f7f1a2c46ce7977b726"
+    },
+    {
+      "original": "tests/test_112_effect_verification_contract.py",
+      "repository": "tests/test_112_effect_verification_contract.py",
+      "sha256": "a0175cb8cd5c16b1407b2bda9578582384a493468232c8ede0f5975764b909e0"
+    },
+    {
+      "original": "tests/test_112_event_driven_health_contract.py",
+      "repository": "tests/test_112_event_driven_health_contract.py",
+      "sha256": "ef817db93c329061a9d42760b01f09cd6443d0fed61cdbf2d5f3649f29816290"
+    },
+    {
+      "original": "tests/test_112_host_stub_abi_contract.py",
+      "repository": "tests/test_112_host_stub_abi_contract.py",
+      "sha256": "d2b9f4378adbd0e6a35a6ba66c9e22940aed01067ce7f6dcfc0d8ddb9f3427cc"
+    },
+    {
+      "original": "tests/test_112_input_transaction_contract.py",
+      "repository": "tests/test_112_input_transaction_contract.py",
+      "sha256": "20542436627ed3fca88776c72580a888bc4cb80e578b0d0d68a27009815e3154"
+    },
+    {
+      "original": "tests/test_112_recovery_cache_contract.py",
+      "repository": "tests/test_112_recovery_cache_contract.py",
+      "sha256": "ef4b12174324f16313151cfa102c3d29ec6fe1c4d3aa8f777e61a07d75d0d310"
+    },
+    {
+      "original": "tests/test_112_release_builder_contract.py",
+      "repository": "tests/test_112_release_builder_contract.py",
+      "sha256": "7e43fc5cf862d92b4728aa2135fe24a0a9ab26e16ad4587f465d117b23488455"
+    },
+    {
+      "original": "tests/test_112_reproducible_source_gate_contract.py",
+      "repository": "tests/test_112_reproducible_source_gate_contract.py",
+      "sha256": "fb944e352f8e4decdd8301f08c7ead282c6cf607c7e5142deeca39c8225575ee"
+    },
+    {
+      "original": "tests/test_112_toolchain_encoding_contract.py",
+      "repository": "tests/test_112_toolchain_encoding_contract.py",
+      "sha256": "3832aa82c624486038c7fa2b4c20ca2acce49522a7bd9574b17d9f87432ca73a"
+    },
+    {
+      "original": "tests/test_112_trace_diagnostics_contract.py",
+      "repository": "tests/test_112_trace_diagnostics_contract.py",
+      "sha256": "e1dcbe99f7d9649a1acf249e726b13767e29d7c9b97defcc70e517e376e138dc"
+    },
+    {
+      "original": "tests/test_113_keyboard_neutrality_contract.py",
+      "repository": "tests/test_113_keyboard_neutrality_contract.py",
+      "sha256": "f14b7ef6e2d6b418d5e655e9b6c56e0d6724263d3097fe21231ca74d7b349cd3"
+    },
+    {
+      "original": "tests/test_113_part1_source_gate_contract.py",
+      "repository": "tests/test_113_part1_source_gate_contract.py",
+      "sha256": "8960fc572f9eedd7bfa601467596d22410142cea3bb2ac46b01f3f2a3b159f44"
+    },
+    {
+      "original": "tests/test_113_part2_browser_diagnostics_contract.py",
+      "repository": "tests/test_113_part2_browser_diagnostics_contract.py",
+      "sha256": "84e8cfab6491192bfcf259b505f2f98dbd4fceabd41d9b17825ad610c47d7132"
+    },
+    {
+      "original": "tests/test_113_part2_cache_lifecycle_contract.py",
+      "repository": "tests/test_113_part2_cache_lifecycle_contract.py",
+      "sha256": "ddc6bc9093f473d929a61403e8034440b87d8288c508dbc4cfb5a2fe63c5683a"
+    },
+    {
+      "original": "tests/test_113_part2_navigation_generation_contract.py",
+      "repository": "tests/test_113_part2_navigation_generation_contract.py",
+      "sha256": "3b3c496727adbfadbc39e0d180d1306bed6c20e69810523cbcce769b6a738b54"
+    },
+    {
+      "original": "tests/test_113_part2_passive_safety_contract.py",
+      "repository": "tests/test_113_part2_passive_safety_contract.py",
+      "sha256": "1ef653fcefd848efd6f96fac5a6fef48438a9d735313ca000012d36fe81d9d79"
+    },
+    {
+      "original": "tests/test_113_part2_source_gate_contract.py",
+      "repository": "tests/test_113_part2_source_gate_contract.py",
+      "sha256": "1a1b04f95dd64cf158e049696c45a7d5f78313fbb86c15510361ec7518301eb8"
+    },
+    {
+      "original": "tests/test_113_part2_timerless_health_contract.py",
+      "repository": "tests/test_113_part2_timerless_health_contract.py",
+      "sha256": "4f26946fd70802762a2dd699bdb1e337b682d1738b1d30a6a4a0a4906db9a696"
+    },
+    {
+      "original": "tests/test_113_part3_release_contract.py",
+      "repository": "tests/test_113_part3_release_contract.py",
+      "sha256": "51afe6b4a0b86c541f6b70c2af9f1d9fdb13ffc5ac4406ff7065c71d1244b6e6"
+    },
+    {
+      "original": "tests/test_113_version_bridge_contract.py",
+      "repository": "tests/test_113_version_bridge_contract.py",
+      "sha256": "7bb0882793724f1161969c66149788267f2d080d959b250c4ccb95b6cefcc32e"
+    },
+    {
+      "original": "tests/test_beta1_browserfit_contract.py",
+      "repository": "tests/test_beta1_browserfit_contract.py",
+      "sha256": "fce6f63ca78e487355dc82f5d74210068aafe26bdb28e2afd0557b94c8c28f83"
+    },
+    {
+      "original": "tests/test_beta2_cache_resume_contract.py",
+      "repository": "tests/test_beta2_cache_resume_contract.py",
+      "sha256": "d09c2afbb1050f5d62f063595aa3843af03e565516ee835a3fa729709ce53226"
+    },
+    {
+      "original": "tests/test_beta2_contract.py",
+      "repository": "tests/test_beta2_contract.py",
+      "sha256": "67abeedd0fa90f6276351026487a6a4daafcf6835ad71f05f50a70d458057b6e"
+    },
+    {
+      "original": "tests/test_chinese_ui_startup_contract.py",
+      "repository": "tests/test_chinese_ui_startup_contract.py",
+      "sha256": "744732b04946acba02cebe8366241f65f3df514d7555e81ce9515a19cc3f1a6c"
+    },
+    {
+      "original": "tests/test_crashfix_r6_contract.py",
+      "repository": "tests/test_crashfix_r6_contract.py",
+      "sha256": "ded34b229b012bcde39301abd643b782c7f5e86f4531f6b3d7bf6b4f01c2be64"
+    },
+    {
+      "original": "tests/test_device_protocol_contract.py",
+      "repository": "tests/test_device_protocol_contract.py",
+      "sha256": "d00ab74d224fd916c49a574f39cf762621faa39b8c528d41a180857a069ef67d"
+    },
+    {
+      "original": "tests/test_diagnostics_contract.py",
+      "repository": "tests/test_diagnostics_contract.py",
+      "sha256": "80bc196dcc2fc70edd6cb4e8299601d7ad5707534a6455f4f9f19fb859445bcf"
+    },
+    {
+      "original": "tests/test_main_activity_contract.py",
+      "repository": "tests/test_main_activity_contract.py",
+      "sha256": "27483aa0dd868f84142cca57f06b80baeb8a5225c43f7fa10eda31162c6baedb"
+    },
+    {
+      "original": "tests/test_release_102_contract.py",
+      "repository": "tests/test_release_102_contract.py",
+      "sha256": "9a9bfd716854091bd8fbfc32a95b28a679c048a755e7cf1e8786651117aae51b"
+    },
+    {
+      "original": "tests/test_runtimefix_hybrid_packaging_contract.py",
+      "repository": "tests/test_runtimefix_hybrid_packaging_contract.py",
+      "sha256": "68c47f1ce9c9e9f9c7e9b1e64c261d43ff786ccfa907d4f9814b3c7e487b2957"
+    },
+    {
+      "original": "tests/test_runtimefix_r0_contract.py",
+      "repository": "tests/test_runtimefix_r0_contract.py",
+      "sha256": "45871d09b7d7958f94b60c42eda3ab23aaa88cafef4ea27017d612956e971714"
+    },
+    {
+      "original": "tests/test_runtimefix_r3_contract.py",
+      "repository": "tests/test_runtimefix_r3_contract.py",
+      "sha256": "b2084b5c6b3a165734bedab44c0f7d67963dfdae3b455c2bfb0ac3cd4c7cafb9"
+    },
+    {
+      "original": "tests/test_runtimefix_r4_contract.py",
+      "repository": "tests/test_runtimefix_r4_contract.py",
+      "sha256": "ec94c4269a98b3ca79ba28cfbedbed3d4c19b9716b46fd3079f2f69e94c2cf81"
+    },
+    {
+      "original": "tests/test_verify_apk_040.py",
+      "repository": "tests/test_verify_apk_040.py",
+      "sha256": "28e1cd36ee307b6d8a22835217d01f952034fbe9bd895fc194e6b6f7b1f658ae"
+    },
+    {
+      "original": "tools/build_111_formal_candidate.sh",
+      "repository": "tools/build_111_formal_candidate.sh",
+      "sha256": "098ebfc8626e61b1596c38caffe860655b8df637b051294bc7c44bf5a2dbdbfc"
+    },
+    {
+      "original": "tools/build_111_release_dex.sh",
+      "repository": "tools/build_111_release_dex.sh",
+      "sha256": "d9befa75591946b09a9b86214d3fe2d969fa9217c2aecbc2da26f4171621c1bb"
+    },
+    {
+      "original": "tools/build_112_rc2_candidate.sh",
+      "repository": "tools/build_112_rc2_candidate.sh",
+      "sha256": "02eb6fb21c864982f40acffa70a13675661bbaf29c3687c7f6f02ae1458fb21f"
+    },
+    {
+      "original": "tools/build_112_release_dex.sh",
+      "repository": "tools/build_112_release_dex.sh",
+      "sha256": "eb95047aab307558b3236a7086b86ba05669fd059ddfa0f91708eb25bc5fcb75"
+    },
+    {
+      "original": "tools/build_113_rc3_candidate.sh",
+      "repository": "tools/build_113_rc3_candidate.sh",
+      "sha256": "20d374a96f5c097b86f0f298088bd162c3e8abd64d76674d187c0fcbc512212f"
+    },
+    {
+      "original": "tools/build_113_release_dex.sh",
+      "repository": "tools/build_113_release_dex.sh",
+      "sha256": "a9dd7db271e9d4331e0f7ecdb94e19a952eda727785d80ce3df749c8c37e43b1"
+    },
+    {
+      "original": "tools/capture_probe_evidence.sh",
+      "repository": "tools/capture_probe_evidence.sh",
+      "sha256": "b1938cb209cd7a1d7960cbcfa599770dfff77c11b9c910634cc6f08042806664"
+    },
+    {
+      "original": "tools/compile_api37_contract.sh",
+      "repository": "tools/compile_api37_contract.sh",
+      "sha256": "7cdb6ac269a5cca0dc94d87e32e75d669a9d38209a71f355270221151e1a49b3"
+    },
+    {
+      "original": "tools/generate_release_r.py",
+      "repository": "tools/generate_release_r.py",
+      "sha256": "a851457cf7f209db384e2be37cfed4ed68a83b379a6ad1863a68df3bcedb3cb2"
+    },
+    {
+      "original": "tools/lint_newapi_min26.sh",
+      "repository": "tools/lint_newapi_min26.sh",
+      "sha256": "e72c80ec6b0aa57d12271a040bef7a7b3c7079412265be9ceb5fd35730cecffa"
+    },
+    {
+      "original": "tools/patch_beta2_binary.py",
+      "repository": "tools/patch_beta2_binary.py",
+      "sha256": "fca2a9b93d9374842508308f2ad6ad33786740d47b8259f63812dde212f6ae2b"
+    },
+    {
+      "original": "tools/patch_release_manifest.py",
+      "repository": "tools/patch_release_manifest.py",
+      "sha256": "69d245225ce8ec1fd690cefb5e82a6ef065ce80a0d85d1ada960acf611b2ce6e"
+    },
+    {
+      "original": "tools/run_110_formal_source_gate.sh",
+      "repository": "tools/run_110_formal_source_gate.sh",
+      "sha256": "adedf48ebc1ce3e0bf028596a7e9148439770f8da3924529f2253b5e09d416bf"
+    },
+    {
+      "original": "tools/run_112_rc2_source_gate.sh",
+      "repository": "tools/run_112_rc2_source_gate.sh",
+      "sha256": "92284104964eca6298beeb958ae9a46f2c98d6491f5461db8f0eea2130afc91c"
+    },
+    {
+      "original": "tools/run_113_part1_source_gate.sh",
+      "repository": "tools/run_113_part1_source_gate.sh",
+      "sha256": "7481035d8a1f3214a8fe47e8311adc1c56926401a5b88ad9446955a35d93736d"
+    },
+    {
+      "original": "tools/run_113_part2_source_gate.sh",
+      "repository": "tools/run_113_part2_source_gate.sh",
+      "sha256": "1608d905a079f1f4af568bebca625d0b138954b85fd939970e20ecfc45a52f5c"
+    },
+    {
+      "original": "tools/run_113_part3_source_gate.sh",
+      "repository": "tools/run_113_part3_source_gate.sh",
+      "sha256": "7e47cc7ae468a582159dca0b3f3f4c3a64700849bceb1e6ff92049eeb8c66331"
+    },
+    {
+      "original": "tools/run_all_host_tests.sh",
+      "repository": "tools/run_all_host_tests.sh",
+      "sha256": "13d1602ea66484517029d8d83d6f708f99b2cb329b5fa6e04f7317c308cfd610"
+    },
+    {
+      "original": "tools/run_host_policy_tests.sh",
+      "repository": "tools/run_host_policy_tests.sh",
+      "sha256": "b3c7f0c7d64b12d627acfb771c447a12c399da84cd90baea93b4e145562d18ed"
+    },
+    {
+      "original": "tools/verify_apk_040.py",
+      "repository": "tools/verify_apk_040.py",
+      "sha256": "fc00ce2efa29f5e92fae5385e0da49c8415e3b24422c9e6516118026ef450a95"
+    },
+    {
+      "original": "tools/verify_effect_verification_node.js",
+      "repository": "tools/verify_effect_verification_node.js",
+      "sha256": "a613e5f71560ef1647aedf69c72b833250ff6e637e1fe87ec872ff773bed0c3a"
+    },
+    {
+      "original": "tools/verify_geckoview153_abi.sh",
+      "repository": "tools/verify_geckoview153_abi.sh",
+      "sha256": "eebe2ba29997cef2b109931e2364db469968136afdd82a734283a822f855a53c"
+    },
+    {
+      "original": "tools/verify_host_040.sh",
+      "repository": "tools/verify_host_040.sh",
+      "sha256": "c5ddcef3ba9992a8e6864935ee2ca30331fd7d683e067f0fa15fa3e69437f94a"
+    },
+    {
+      "original": "tools/verify_input_router_node.js",
+      "repository": "tools/verify_input_router_node.js",
+      "sha256": "1c1bc3939a3421640c635439b49ff2cd58827326d4b9f356a8bd14f7e3938dfb"
+    },
+    {
+      "original": "tools/verify_keyboard_neutrality_node.js",
+      "repository": "tools/verify_keyboard_neutrality_node.js",
+      "sha256": "577d108b3b9a2898b90fe9f7e28c94657d9db28fa547232cd79fa0a08e40ca0f"
+    }
+  ]
+}

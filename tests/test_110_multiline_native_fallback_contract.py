@@ -1,0 +1,4 @@
+from _vc113_keyboard_neutrality import assert_native_transparent
+
+def test_native_multiline_fallback_is_removed_in_favor_of_gecko_web_semantics():
+    assert_native_transparent()
