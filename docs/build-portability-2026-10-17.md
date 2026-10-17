@@ -1,6 +1,6 @@
 # Android build portability — implementation slice A (2026-10-17)
 
-Status: **CI pending independently observed GitHub run**. Baseline version stays `1.1.0/vc113` and GeckoView remains `153.0.20260810162159`. This change does **not** produce a formally signed 1.1.1 APK or certify HarmonyOS 7.
+Status: **CI under real GitHub verification; first run exposed multi-line SDK package argument error, corrected in the next revision**. Baseline version stays `1.1.0/vc113` and GeckoView remains `153.0.20260810162159`. This change does **not** produce a formally signed 1.1.1 APK or certify HarmonyOS 7.
 
 ## Toolchain
 
