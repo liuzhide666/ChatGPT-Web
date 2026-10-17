@@ -1,0 +1,83 @@
+name: apk-cross-runner
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/apk-cross-runner.yml'
+      - 'tools/report_cross_runner_identity.py'
+      - 'tests/test_cross_runner_identity.py'
+      - 'docs/apk-cross-runner-investigation.md'
+permissions:
+  contents: read
+jobs:
+  collect-runner-identities:
+    strategy:
+      fail-fast: false
+      matrix:
+        attempt: [A, B]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - name: Checkout exact revision
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Set up Java 17
+        uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd # v4
+        with:
+          packages: platform-tools
+      - name: Install pinned SDK
+        run: sdkmanager --install "platforms;android-37.0" "build-tools;36.0.0"
+      - name: Verify fixed build inputs
+        run: |
+          python3 tools/verify_gradle_wrapper.py
+          python3 tools/verify_gradle_dependencies.py
+      - name: Setup pinned Gradle
+        uses: gradle/actions/setup-gradle@3f5f9adaf7d9fecd50b5935e54106014257a94e6 # v6
+        with:
+          gradle-version: '9.3.1'
+      - name: Assemble debug probe independently
+        run: ./gradlew --no-daemon --no-build-cache clean :app:assembleProbeDebug
+      - name: Collect only APK hashes, signer fingerprint and entries
+        run: |
+          python3 tools/report_cross_runner_identity.py build \
+            app/build/outputs/apk/probe/debug/app-probe-debug.apk \
+            --apksigner "$ANDROID_HOME/build-tools/36.0.0/apksigner" \
+            --output "$RUNNER_TEMP/identity-${{ matrix.attempt }}.json"
+      - name: Publish JSON identity report, never APK
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: apk-cross-runner-${{ matrix.attempt }}-${{ github.sha }}
+          path: ${{ runner.temp }}/identity-${{ matrix.attempt }}.json
+          retention-days: 14
+          if-no-files-found: error
+  compare-cross-runner-identities:
+    needs: [collect-runner-identities]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout comparison tool
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Download two JSON artifacts
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          pattern: apk-cross-runner-*
+          merge-multiple: true
+          path: ${{ runner.temp }}/identity-reports
+      - name: Compare isolated runner results
+        run: |
+          python3 tools/report_cross_runner_identity.py compare \
+            "$RUNNER_TEMP/identity-reports/identity-A.json" \
+            "$RUNNER_TEMP/identity-reports/identity-B.json" \
+            --output "$RUNNER_TEMP/apk-cross-runner-comparison.json"
+      - name: Upload conclusion (JSON only)
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: apk-cross-runner-conclusion-${{ github.sha }}
+          path: ${{ runner.temp }}/apk-cross-runner-comparison.json
+          retention-days: 14
+          if-no-files-found: error
+# All builds are debug and not for distribution. A green run is NOT equality proof.
