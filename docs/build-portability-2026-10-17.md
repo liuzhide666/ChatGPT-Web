@@ -1,13 +1,13 @@
 # Android build portability — implementation slice A (2026-10-17)
 
-Status: **CI under real GitHub verification; first run exposed multi-line SDK package argument error, corrected in the next revision**. Baseline version stays `1.1.0/vc113` and GeckoView remains `153.0.20260810162159`. This change does **not** produce a formally signed 1.1.1 APK or certify HarmonyOS 7.
+Status: **CI under real GitHub verification; first run exposed multi-line SDK package argument error; second run exposed the API 37.0 SDK package name, corrected in the next revision**. Baseline version stays `1.1.0/vc113` and GeckoView remains `153.0.20260810162159`. This change does **not** produce a formally signed 1.1.1 APK or certify HarmonyOS 7.
 
 ## Toolchain
 
 - Gradle: `9.3.1` through official `gradle/actions/setup-gradle` in CI (no unverified wrapper JAR checked in)
 - Android Gradle Plugin: `9.1.1` (unchanged)
 - JDK: Temurin Java 17
-- Android SDK: API `37`, Build Tools `36.0.0`
+- Android SDK: API `37` (SDK Manager name `platforms;android-37.0`), Build Tools `36.0.0`
 - GeckoView: `153.0.20260810162159` (unchanged)
 
 The CI job installs official tools and runs `gradle --no-daemon :app:assembleProbeDebug`. An Android debug/probe APK is a **non-release** test artifact and is not published or signed with the production keystore. It prints SHA-256 and verifies ZIP integrity and manifest/DEX presence. Source-only CI remains a separate required check. Host Java/Android API37 contracts run in the Android CI job.

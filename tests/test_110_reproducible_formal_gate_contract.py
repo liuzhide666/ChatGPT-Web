@@ -23,7 +23,7 @@ def test_api37_contract_compile_uses_explicit_toolchain_and_cleans_output():
     assert 'source "$ROOT/tools/resolve_android_toolchain.sh"' in text
     assert "TOOLKIT_ROOT" in resolver  # backward-compatible historical toolkit
     assert "JAVA_HOME" in resolver and "ANDROID_HOME" in resolver
-    assert "android-37/android.jar" in resolver
+    assert "android-37.0/android.jar" in resolver and "android-37/android.jar" in resolver
     assert '-encoding UTF-8' in text
     assert "find \"$SRC\" -type f -name '*.java'" in text
     assert 'trap' in text

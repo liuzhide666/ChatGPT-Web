@@ -23,7 +23,7 @@ jobs:
         with:
           packages: platform-tools
       - name: Install Android API 37 and Build Tools 36
-        run: sdkmanager --install "platforms;android-37" "build-tools;36.0.0"
+        run: sdkmanager --install "platforms;android-37.0" "build-tools;36.0.0"
       - name: Set up Gradle 9.3.1
         uses: gradle/actions/setup-gradle@3f5f9adaf7d9fecd50b5935e54106014257a94e6 # v6
         with:

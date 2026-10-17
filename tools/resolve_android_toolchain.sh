@@ -30,10 +30,14 @@ _resolve_android_toolchain() {
       echo 'Toolchain: Android SDK not found. Set ANDROID_HOME or ANDROID_SDK_ROOT (API 37).' >&2
       return 2
     fi
-    ANDROID_JAR="$ANDROID_SDK_ROOT/platforms/android-37/android.jar"
+    if [[ -f "$ANDROID_SDK_ROOT/platforms/android-37.0/android.jar" ]]; then
+      ANDROID_JAR="$ANDROID_SDK_ROOT/platforms/android-37.0/android.jar"
+    else
+      ANDROID_JAR="$ANDROID_SDK_ROOT/platforms/android-37/android.jar"
+    fi
   fi
   if [[ ! -f "$ANDROID_JAR" ]]; then
-    echo "Toolchain: missing $ANDROID_JAR; install with sdkmanager 'platforms;android-37'." >&2
+    echo "Toolchain: missing $ANDROID_JAR; install with sdkmanager 'platforms;android-37.0' (API 37)." >&2
     return 2
   fi
   export JDK_ROOT JAVAC JAVA ANDROID_SDK_ROOT ANDROID_JAR

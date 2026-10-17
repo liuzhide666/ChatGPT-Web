@@ -12,23 +12,27 @@ def run_resolver(env):
     return subprocess.run(["bash", str(SCRIPT)], env=env, text=True, capture_output=True)
 
 
-def test_resolver_prefers_explicit_jdk_sdk(tmp_path):
+import pytest
+
+
+@pytest.mark.parametrize("platform_dir", ["android-37", "android-37.0"])
+def test_resolver_prefers_explicit_jdk_sdk(tmp_path, platform_dir):
     jdk = tmp_path / "jdk"
     sdk = tmp_path / "sdk"
     (jdk / "bin").mkdir(parents=True)
-    (sdk / "platforms/android-37").mkdir(parents=True)
+    (sdk / "platforms" / platform_dir).mkdir(parents=True)
     for executable in ["javac", "java"]:
         p = jdk / "bin" / executable
         p.write_text("#!/bin/sh\nexit 0\n")
         p.chmod(0o755)
-    (sdk / "platforms/android-37/android.jar").write_bytes(b"test fixture")
+    (sdk / "platforms" / platform_dir / "android.jar").write_bytes(b"test fixture")
     env = dict(os.environ, JAVA_HOME=str(jdk), ANDROID_HOME=str(sdk))
     for key in ("TOOLKIT_ROOT", "JDK_ROOT", "ANDROID_JAR", "ANDROID_SDK_ROOT"):
         env.pop(key, None)
     result = run_resolver(env)
     assert result.returncode == 0, result.stderr
     assert "TOOLCHAIN_RESOLVE_OK" in result.stdout
-    assert f"ANDROID_JAR={sdk}/platforms/android-37/android.jar" in result.stdout
+    assert f"ANDROID_JAR={sdk}/platforms/{platform_dir}/android.jar" in result.stdout
     assert f"JAVAC={jdk}/bin/javac" in result.stdout
 
 
