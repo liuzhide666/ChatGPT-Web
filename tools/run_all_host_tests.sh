@@ -2,10 +2,9 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-TOOLKIT_ROOT="${TOOLKIT_ROOT:-/mnt/data/android-build-toolkit-linux-x86_64}"
-JDK_ROOT="${JDK_ROOT:-$TOOLKIT_ROOT/jdk-17}"
-ANDROID_JAR="${ANDROID_JAR:-$TOOLKIT_ROOT/sdk/platforms/android-37/android.jar}"
-OUT="$ROOT/.host-test-all-classes"
+source "$ROOT/tools/resolve_android_toolchain.sh"
+OUT="$(mktemp -d "${TMPDIR:-/tmp}/chatgptweb-host-tests.XXXXXX")"
+trap 'rm -rf "$OUT"' EXIT
 SRC="$ROOT/app/src/main/java/com/liuchenlin/chatgptweb"
 TEST="$ROOT/host-tests/com/liuchenlin/chatgptweb"
 STUB="$ROOT/host-test-stubs"
@@ -13,7 +12,6 @@ STUB="$ROOT/host-test-stubs"
 [[ -x "$JDK_ROOT/bin/javac" ]] || { echo "Missing javac: $JDK_ROOT/bin/javac" >&2; exit 2; }
 [[ -f "$ANDROID_JAR" ]] || { echo "Missing Android API jar: $ANDROID_JAR" >&2; exit 2; }
 
-rm -rf "$OUT"
 mkdir -p "$OUT"
 mapfile -t STUBS < <(find "$STUB" -type f -name '*.java' | sort)
 mapfile -t PROD < <(find "$SRC" -type f -name '*.java' ! -name 'MainActivity.java' | sort)

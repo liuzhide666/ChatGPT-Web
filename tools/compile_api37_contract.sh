@@ -2,9 +2,7 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-TOOLKIT_ROOT="${TOOLKIT_ROOT:-/mnt/data/android-build-toolkit-linux-x86_64}"
-JAVAC="$TOOLKIT_ROOT/jdk-17/bin/javac"
-ANDROID_JAR="${ANDROID_JAR:-$TOOLKIT_ROOT/sdk/platforms/android-37/android.jar}"
+source "$ROOT/tools/resolve_android_toolchain.sh"
 SRC="$ROOT/app/src/main/java/com/liuchenlin/chatgptweb"
 STUB="$ROOT/host-test-stubs"
 OUT="$(mktemp -d "${TMPDIR:-/tmp}/chatgptweb-api37.XXXXXX")"
