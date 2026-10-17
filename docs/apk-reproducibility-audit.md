@@ -22,4 +22,13 @@ Diagnostic statuses: `BYTE_IDENTICAL`, `ENTRY_SET_CHANGED`, `ENTRY_CONTENT_CHANG
 - Real device, 16 KiB native runtime compatibility, upgrade/install and HarmonyOS 7 validation are NOT_RUN.
 - No release version, `targetSdk`, GeckoView, cookie persistence or keyboard semantics are changed.
 
-The actual result and a pointer to its run and artifact will be appended only after GitHub returns the completed run evidence. If a mismatch occurs, create a targeted fix instead of artificially normalizing the report.
+## First observed GitHub result — 2026-10-17
+
+- PR run [#39030997866](https://github.com/liuzhide666/ChatGPT-Web/actions/runs/39030997866), commit `4451278578a1645b7c76fe4206f9c7c11b28a77d`: **BYTE_IDENTICAL**, diagnostic job PASS.
+- Both builds produced **528,297,891 bytes** with **180 APK entries** and 13 native libraries each in `arm64-v8a`, `armeabi-v7a` and `x86_64`.
+- Build A and B SHA-256 both `9b9a270bc1540ec451a314078b747fd4a3b92ae4527ad4f92f046be655233017`.
+- Independent `apksigner verify` succeeded for both, and **their signer certificate SHA-256 values matched** (the signer is a temporary debug identity, not the historical release key).
+- No ZIP entry content differences or ZIP metadata differences were found. Downloadable GitHub run artifact `apk-reproducibility-3b8d6681b5e538acb140f3e3e7c36c39fc079443` is a JSON report only.
+
+**Interpretation:** two clean build tasks using a shared Runner/cache achieved byte-level equality. Prior builds in different CI runs had different APK SHA-256 values; potential variations in ephemeral debug signer identities must be tested independently rather than asserted as the cause. A later experiment should use **two isolated GitHub runners** and compare signer certificate fingerprints and source-derived payload digests.
+
