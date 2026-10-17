@@ -53,4 +53,8 @@ Maintain separate source, tested binary, and distribution evidence. Changes go t
 
 ## Downloads and repository visibility
 
-The repository is currently **public**. Do not post private screenshots or account information in Issues. The original 1.1.0 signed APK is intentionally not distributed here. For a folder-free transfer archive use `ChatGPT-Web-ALL-FILES-FLAT-2026-10-17.zip`: the ZIP has no directory entries and contains a path reconstruction manifest for restoration. The older `ChatGPT-Web-GitHub-bootstrap-2026-10-17.zip` was a legacy hierarchical archive; it is retained in previous Git history and Library, not as an active download.
+The repository is currently **public**. Do not post private screenshots or account information in Issues. The original 1.1.0 signed APK is intentionally not distributed here. For the newest folder-free transfer archive, use the latest successful `flat-source` GitHub Actions artifact; the dated ZIP is a historical source snapshot. The older `ChatGPT-Web-GitHub-bootstrap-2026-10-17.zip` was a legacy hierarchical archive; it is retained in previous Git history and Library, not as an active download.
+
+## Current folder-free source delivery
+
+The updated project snapshot can be downloaded as a root-only flat ZIP from the latest successful [flat-source Actions run](https://github.com/liuzhide666/ChatGPT-Web/actions/workflows/flat-source.yml). Every entry is at the ZIP root; the included `FILE-MAP.csv` and `restore_flat.py` reconstruct source subpaths with SHA-256 verification. The repository-root flat ZIP dated 2026-10-17 is an earlier archived snapshot and may not contain newer commits. See `docs/flat-source-delivery-2026-10-17.md`.
