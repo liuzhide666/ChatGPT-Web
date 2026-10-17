@@ -1,0 +1,29 @@
+name: flat-source
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package-flat-source:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out exact source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Verify export tests
+        run: |
+          python3 -m pip install --disable-pip-version-check pytest==8.4.2
+          python3 -m pytest -q tests/test_flat_source_export.py
+      - name: Prepare flat ZIP staging
+        run: python3 tools/export_flat_source.py "$RUNNER_TEMP/ChatGPT-Web-flat"
+      - name: Upload flat source ZIP
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: ChatGPT-Web-ALL-FILES-FLAT-${{ github.sha }}
+          path: ${{ runner.temp }}/ChatGPT-Web-flat/*
+          if-no-files-found: error
+          compression-level: 9
+          retention-days: 30
