@@ -1,6 +1,6 @@
 # Android build portability — implementation slice A (2026-10-17)
 
-Status: **CI under real GitHub verification; first run exposed multi-line SDK package argument error; second run exposed the API 37.0 SDK package name, corrected in the next revision**. Baseline version stays `1.1.0/vc113` and GeckoView remains `153.0.20260810162159`. This change does **not** produce a formally signed 1.1.1 APK or certify HarmonyOS 7.
+Status: **Android build CI verified on PR #12 at commit `3b6b4140aa1224a2df98203b4e15e7325dfbd428`; not a formal APK release**. The first two attempts exposed SDK installation errors; the third succeeded after using distinct package arguments and the API 37.0 platform name. Baseline version stays `1.1.0/vc113` and GeckoView remains `153.0.20260810162159`. This change does **not** produce a formally signed 1.1.1 APK or certify HarmonyOS 7.
 
 ## Toolchain
 
@@ -31,12 +31,15 @@ Alternatively, `JDK_ROOT` or `ANDROID_JAR` may be set explicitly; `TOOLKIT_ROOT`
 ## Gate results
 
 - `RED`: 4 new portability tests failed before implementation because resolver was missing, old project name, and scripts depended on historical paths.
-- `GREEN` in local environment: 178 pytest cases, Node keyboard neutrality, bash syntax, path hygiene. Local machine has JDK 21 and no Android API37 SDK; it cannot establish Android Host/API37/Gradle compile success.
-- `NOT_RUN`: real APK compile until GitHub workflow runs; signed upgrade, 16KiB native-library audit, and HarmonyOS 7 device A/B.
+- `GREEN` in local environment: 181 pytest cases, Node keyboard neutrality, bash syntax, path hygiene. Local machine has JDK 21 and no Android API37 SDK; CI provided the independent JDK 17/API37 execution evidence.
+- `GREEN` on GitHub [run #39025973725](https://github.com/liuzhide666/ChatGPT-Web/actions/runs/39025973725): Java Host 30 PASS, API37 compile PASS, Gradle `:app:assembleProbeDebug` BUILD SUCCESSFUL, ZIP integrity/manifest/classes.dex checked.
+- Probe Debug artifact only: **528297891 bytes**, SHA-256 `3d92cf11bdb4bdbb006a183e65334d45b457b0dedd077a0b62547b24175a75dd`; this artifact is not a formal release APK and was not uploaded as a distribution. Large debug size requires separate analysis; do not silently change GeckoView or ABI packaging in this phase.
+- `source-checks` also PASS on the same source commit (run #39025973613).
+- `NOT_RUN`: official Gradle Wrapper provenance (unavailable); signed upgrade, 16KiB native-library audit and HarmonyOS 7 device A/B. Build Success is distinct from signed/installed/validated.
 
 ## Next tasks
 
-1. Require GitHub Android CI to actually complete and inspect test/assembly logs before merging.
+1. Record the verified GitHub CI receipt and protect `main` with required checks; merge only against exact verified commit.
 2. Verify official Wrapper JAR and distribution SHA and commit via a separate reviewable PR.
 3. Pin dependency verification metadata and review Gecko artifact provenance after a real clean build.
 4. Do not change baseline versionCode `113` until a new release candidate is approved.
