@@ -14,7 +14,7 @@ Repository: https://github.com/liuzhide666/ChatGPT-Web
 - Editable source under `app/`, tests under `tests/` and `host-tests/`, source workflow under `.github/`.
 - `docs/` is the versioned design, compatibility matrix, release provenance, and plan record.
 - The **flat ZIP delivery** is `ChatGPT-Web-ALL-FILES-FLAT-2026-10-17.zip`; every ZIP entry is a root-level file. Its `FILE-MAP.csv` and `restore_flat.py` reconstruct the editable layout outside the archive.
-- The older `ChatGPT-Web-GitHub-bootstrap-2026-10-17.zip` was supplied before the flat deliverable. Keep it as legacy provenance, but use the flat ZIP or repository source tree for ongoing work.
+- The older `ChatGPT-Web-GitHub-bootstrap-2026-10-17.zip` was supplied before the flat deliverable. Its bytes are retained in the earlier Git commit and Library, but the current branch removes the old ZIP so the single flat ZIP is the only active delivery archive.
 
 ## Review and verification
 
