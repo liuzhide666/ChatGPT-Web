@@ -1,10 +1,5 @@
 name: dependency-baseline-candidate
 on:
-  pull_request:
-    paths:
-      - '.github/workflows/gradle-dependency-bootstrap.yml'
-      - 'tools/verify_gradle_dependencies.py'
-      - 'tests/test_gradle_dependencies.py'
   workflow_dispatch:
 permissions:
   contents: read
