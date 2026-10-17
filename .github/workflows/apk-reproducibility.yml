@@ -1,0 +1,68 @@
+name: apk-reproducibility
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'tools/compare_debug_apk_reproducibility.py'
+      - 'tests/test_apk_reproducibility.py'
+      - '.github/workflows/apk-reproducibility.yml'
+      - 'docs/apk-reproducibility-audit.md'
+permissions:
+  contents: read
+jobs:
+  same-runner-rebuild:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Set up Java 17
+        uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd # v4
+        with:
+          packages: platform-tools
+      - name: Install pinned SDK
+        run: sdkmanager --install "platforms;android-37.0" "build-tools;36.0.0"
+      - name: Validate Wrapper and locked dependencies
+        run: |
+          python3 tools/verify_gradle_wrapper.py
+          python3 tools/verify_gradle_dependencies.py
+      - name: Set up Gradle 9.3.1
+        uses: gradle/actions/setup-gradle@3f5f9adaf7d9fecd50b5935e54106014257a94e6 # v6
+        with:
+          gradle-version: '9.3.1'
+      - name: Controlled clean build A
+        run: |
+          ./gradlew --no-daemon --no-build-cache clean :app:assembleProbeDebug
+          test -f app/build/outputs/apk/probe/debug/app-probe-debug.apk
+          cp app/build/outputs/apk/probe/debug/app-probe-debug.apk "$RUNNER_TEMP/probe-a.apk"
+      - name: Controlled clean build B
+        run: |
+          ./gradlew --no-daemon --no-build-cache clean :app:assembleProbeDebug
+          test -f app/build/outputs/apk/probe/debug/app-probe-debug.apk
+          cp app/build/outputs/apk/probe/debug/app-probe-debug.apk "$RUNNER_TEMP/probe-b.apk"
+      - name: Independently verify debug APK signatures
+        run: |
+          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify "$RUNNER_TEMP/probe-a.apk"
+          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify "$RUNNER_TEMP/probe-b.apk"
+          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --print-certs "$RUNNER_TEMP/probe-a.apk" | grep -E 'Signer #1 certificate SHA-256 digest' > "$RUNNER_TEMP/signer-a.txt"
+          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --print-certs "$RUNNER_TEMP/probe-b.apk" | grep -E 'Signer #1 certificate SHA-256 digest' > "$RUNNER_TEMP/signer-b.txt"
+          diff -u "$RUNNER_TEMP/signer-a.txt" "$RUNNER_TEMP/signer-b.txt"
+      - name: Compare APK bytes and per-entry digests
+        run: |
+          python3 tools/compare_debug_apk_reproducibility.py \
+            "$RUNNER_TEMP/probe-a.apk" "$RUNNER_TEMP/probe-b.apk" \
+            --output "$RUNNER_TEMP/apk-reproducibility-report.json"
+      - name: Upload diagnostic report only (never upload APK)
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: apk-reproducibility-${{ github.sha }}
+          path: ${{ runner.temp }}/apk-reproducibility-report.json
+          if-no-files-found: error
+          retention-days: 14
+# Experimental check is observational. Workflow success != byte-identical APK.
+# The two builds share a runner and dependency cache; cold-cache cross-runner gate is NOT_RUN.
