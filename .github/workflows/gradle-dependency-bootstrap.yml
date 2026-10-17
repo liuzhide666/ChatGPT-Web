@@ -1,0 +1,45 @@
+name: dependency-baseline-candidate
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/gradle-dependency-bootstrap.yml'
+      - 'tools/verify_gradle_dependencies.py'
+      - 'tests/test_gradle_dependencies.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  collect-sha256:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - name: Checkout source at exact commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Set up Java 17
+        uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd # v4
+        with:
+          packages: platform-tools
+      - name: Install API37 and Build Tools
+        run: sdkmanager --install "platforms;android-37.0" "build-tools;36.0.0"
+      - name: Verify Wrapper integrity
+        run: python3 tools/verify_gradle_wrapper.py
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@3f5f9adaf7d9fecd50b5935e54106014257a94e6 # v6
+        with:
+          gradle-version: '9.3.1'
+      - name: Generate dependency checksum candidate from actual debug build
+        run: ./gradlew --no-daemon --write-verification-metadata sha256 :app:assembleProbeDebug
+      - name: Lint generated checksums without granting trust
+        run: python3 tools/verify_gradle_dependencies.py gradle/verification-metadata.xml
+      - name: Upload candidate for human review (not a trusted baseline)
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: gradle-sha256-candidate-${{ github.sha }}
+          path: gradle/verification-metadata.xml
+          if-no-files-found: error
+          retention-days: 14
