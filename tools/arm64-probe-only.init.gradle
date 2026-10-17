@@ -1,0 +1,12 @@
+// Used only with `-I tools/arm64-probe-only.init.gradle` for CI byte-size experiments.
+// Never applied to the normal build, formal app or official release packaging.
+gradle.beforeProject { project ->
+    if (project.path == ':app') {
+        project.plugins.withId('com.android.application') {
+            project.extensions.getByName('androidComponents').finalizeDsl { androidDsl ->
+                androidDsl.productFlavors.getByName('probe').ndk.abiFilters.add('arm64-v8a')
+                project.logger.lifecycle('ARM64_PROBE_FILTER_ENABLED (diagnostic only)')
+            }
+        }
+    }
+}
