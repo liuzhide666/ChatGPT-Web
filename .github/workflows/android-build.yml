@@ -41,6 +41,8 @@ jobs:
         run: bash tools/run_all_host_tests.sh
       - name: Compile Android API 37 contracts
         run: bash tools/compile_api37_contract.sh
+      - name: Verify committed Gradle dependency hashes
+        run: python3 tools/verify_gradle_dependencies.py
       - name: Assemble unsigned-release-compatible debug probe
         run: ./gradlew --no-daemon --stacktrace :app:assembleProbeDebug
       - name: Record nonsecret probe APK SHA-256
