@@ -47,6 +47,12 @@ jobs:
         run: ./gradlew --no-daemon --stacktrace :app:assembleProbeDebug
       - name: Record nonsecret probe APK SHA-256
         run: python3 tools/record_debug_apk.py app/build/outputs/apk/probe/debug/
+      - name: Report stable non-signature payload digest and debug signer
+        run: |
+          python3 tools/report_cross_runner_identity.py build \
+            app/build/outputs/apk/probe/debug/app-probe-debug.apk \
+            --apksigner "$ANDROID_HOME/build-tools/36.0.0/apksigner" \
+            --output "$RUNNER_TEMP/probe-build-identity.json"
       - name: Measure native ABI and 16KiB compatibility indicators
         run: python3 tools/analyze_probe_apk.py app/build/outputs/apk/probe/debug/ --check-zipalign --output "$RUNNER_TEMP/probe-apk-abi-report.json"
 # No production signing data. Debug APK is not uploaded as a release artifact.
